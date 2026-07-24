@@ -90,10 +90,6 @@ Os dados são armazenados com o provider `Microsoft.EntityFrameworkCore.InMemory
 
 ## Migrations
 
-Migrations do Entity Framework Core são destinadas a providers relacionais. Como o projeto usa obrigatoriamente o provider InMemory, não ha suporte real para executar migrations. Por isso, a inicializacao utiliza `EnsureCreated`, sem adicionar SQLite, SQL Server ou outro provider apenas para gerar arquivos de migration.
-
-## Migrations
-
 Não foram criadas migrations do Entity Framework Core porque o projeto utiliza o provider `Microsoft.EntityFrameworkCore.InMemory`.
 
 As migrations são voltadas para bancos relacionais, onde existe um schema físico a ser versionado e atualizado. Como o provider InMemory armazena os dados apenas em memória durante a execução da aplicação, não há um banco real nem estrutura persistente para aplicar migrations.
