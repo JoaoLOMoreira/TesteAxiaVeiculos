@@ -91,3 +91,19 @@ Os dados são armazenados com o provider `Microsoft.EntityFrameworkCore.InMemory
 ## Migrations
 
 Migrations do Entity Framework Core são destinadas a providers relacionais. Como o projeto usa obrigatoriamente o provider InMemory, não ha suporte real para executar migrations. Por isso, a inicializacao utiliza `EnsureCreated`, sem adicionar SQLite, SQL Server ou outro provider apenas para gerar arquivos de migration.
+
+## Testes automatizados
+
+Os testes automatizados foram adicionados como um diferencial do projeto. Eles não eram um requisito obrigatorio do teste tecnico, mas foram incluidos para demonstrar maior confiabilidade na implementação.
+
+O projeto de testes `AxiaVeiculosTests` cobre:
+
+- validacoes dos commands com FluentValidation;
+- regras do `VeiculoService`;
+- fluxo de comandos e queries via MediatR;
+- operacoes do repositorio utilizando EF Core InMemory.
+
+Para executar os testes:
+
+```bash
+dotnet test
