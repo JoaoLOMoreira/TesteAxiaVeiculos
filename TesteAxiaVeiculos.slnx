@@ -1,10 +1,7 @@
 <Solution>
-  <Folder Name="/src/">
-    <Project Path="AxiaVeiculosApplication/AxiaVeiculosApplication.csproj" />
-    <Project Path="AxiaVeiculosDomain/AxiaVeiculosDomain.csproj" />
-    <Project Path="AxiaVeiculosInfra/AxiaVeiculosInfra.csproj" />
-    <Project Path="AxiaVeiculosTests/AxiaVeiculosTests.csproj" />
-  </Folder>
-  <Folder Name="/tests/" />
+  <Project Path="AxiaVeiculosApplication/AxiaVeiculosApplication.csproj" />
+  <Project Path="AxiaVeiculosDomain/AxiaVeiculosDomain.csproj" />
+  <Project Path="AxiaVeiculosInfra/AxiaVeiculosInfra.csproj" />
+  <Project Path="AxiaVeiculosTests/AxiaVeiculosTests.csproj" />
   <Project Path="AxiaVeiculosWebApi/AxiaVeiculosWebApi.csproj" />
 </Solution>
