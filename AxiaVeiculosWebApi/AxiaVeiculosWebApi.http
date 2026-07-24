@@ -1,0 +1,19 @@
+@AxiaVeiculosWebApi_HostAddress = http://localhost:5214
+
+POST {{AxiaVeiculosWebApi_HostAddress}}/api/veiculos
+Content-Type: application/json
+
+{
+  "descricao": "Honda Civic EXL",
+  "marca": "Honda",
+  "modelo": "Civic",
+  "opcionais": "Cambio automatico, ar-condicionado digital",
+  "valor": 145000.00
+}
+
+###
+
+GET {{AxiaVeiculosWebApi_HostAddress}}/api/veiculos
+Accept: application/json
+
+###
